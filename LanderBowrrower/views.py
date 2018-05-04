@@ -23,6 +23,9 @@ def login(request):
 
 
 def register(request):
-    return render(request, 'register.html' )
+    return render(request, 'lander_register.html')
+
+def borrower_register(request):
+    return render(request, 'borrower_register.html' )
 
 

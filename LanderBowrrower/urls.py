@@ -1,7 +1,8 @@
 from django.conf.urls import include, url
-from .views import index,home,single,SubmitRequest,profile,login,register
+from .views import index,home,single,SubmitRequest,profile,login,register,borrower_register
 
 urlpatterns = [
+    url(r'borrower_register/', borrower_register, name='borrower_register'),
     url(r'register/', register, name='register'),
     url(r'login/', login, name='login'),
     url(r'home/', home, name='home'),
