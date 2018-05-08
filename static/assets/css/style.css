@@ -11,7 +11,7 @@ body {
     font-size:14px;
     line-height: 28px;
     color: #777; 
-    background: #fff; 
+    background: #CCCCCC;
     position: relative;
 }
 /*           Font Smoothing      */
@@ -204,8 +204,8 @@ input[type="search"]::-webkit-search-decoration {
     border-color: #05AE0E;
 }
 .btn-warning{
-    color: #FDC600;
-    border-color: #FDC600;
+    color: #ffa500;
+    border-color: #ffa500;
 }
 .btn-danger{
     color: #FF3B30;
@@ -1107,7 +1107,7 @@ page-header
     letter-spacing: 2px;
 }
 .content-area{
-    background-color: #FCFCFC; padding-bottom: 55px;
+    background-color: #CCCCCC; padding-bottom: 55px;
 }
 .layout-switcher a{
     font-size: 25px;

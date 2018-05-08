@@ -61,237 +61,138 @@
 
                                     <div class="tab-pane" id="step1">
                                         <div class="row p-b-15  ">
-                                            <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
-                                            <div class="col-sm-4 col-sm-offset-1">
-                                                <div class="picture-container">
-                                                    <div class="picture">
-                                                        <img src="{% static 'assets/img/default-property.jpg' %}" class="picture-src" id="wizardPicturePreview" title=""/>
-                                                        <input type="file" id="wizard-picture">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
+                                            <h4 class="info-text"> Let's start with Borrower the basic information (with validation)</h4>
+
+
+
+                                             <div class="col-sm-6  col-sm-offset-3 ">
                                                 <div class="form-group">
-                                                    <label>Property name <small>(required)</small></label>
-                                                    <input name="propertyname" type="text" class="form-control" placeholder="Super villa ...">
+                                                    <label for="property-images">Credit report :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">to upload their Credit report .</p>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <label>Property price <small>(required)</small></label>
-                                                    <input name="propertyprice" type="text" class="form-control" placeholder="3330000">
+                                                 <div class="form-group">
+                                                    <label for="property-images">bank statements :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">to upload their bank statement documents .</p>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label>Telephone <small>(empty if you wanna use default phone number)</small></label>
-                                                    <input name="phone" type="text" class="form-control" placeholder="+1 473 843 7436">
+
+                                                  <div class="form-group">
+                                                    <label for="property-images">tax returns :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">need to upload their tax return documents .</p>
                                                 </div>
+
+                                                 <div class="form-group">
+                                                    <label for="property-images"> ID card :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block"> to upload a copy of their Identification card .</p>
+                                                </div>
+
+                                                  <div class="form-group">
+                                                    <label for="property-images"> SSD card :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block"> to upload a copy of their social security card .</p>
+                                                </div>
+
+
+                                                  <div class="form-group">
+                                                    <label for="property-images"> Cash Ability  :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block"> need to upload a document showing cash they have available to spend on the loan.</p>
+                                                </div>
+
                                             </div>
+
+
+
                                         </div>
                                     </div>
                                     <!--  End step 1 -->
 
                                     <div class="tab-pane" id="step2">
-                                        <h4 class="info-text"> How much your Property is Beautiful ? </h4>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>Property Description :</label>
-                                                        <textarea name="discrition" class="form-control" ></textarea>
-                                                    </div>
+                                        <div class="row p-b-15  ">
+                                            <h4 class="info-text">  Borrower the Business Entity  information (with validation)</h4>
+
+
+
+                                             <div class="col-sm-6  col-sm-offset-3 ">
+                                                <div class="form-group">
+                                                    <label for="property-images">Operating Agreement/ Bylaws :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">to upload their Operating Agreement/ Bylaws document .</p>
                                                 </div>
+
+                                                 <div class="form-group">
+                                                    <label for="property-images">Articles of Organization/ Incorporation :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">to upload their Articles of Organization/ Incorporation documents .</p>
+                                                </div>
+
+                                                  <div class="form-group">
+                                                    <label for="property-images">Secretary of State Status :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">need to upload Secretary of State Status documents .</p>
+                                                </div>
+
+                                                 <div class="form-group">
+                                                    <label for="property-images"> Federal EIN :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block"> to need to upload their EIN letter from Internal Revenue Service .</p>
+                                                </div>
+
+
+
                                             </div>
 
-                                            <div class="col-sm-12">
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <label>Property State :</label>
-                                                        <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
-                                                            <option>Seoul</option>
-                                                            <option>Paris</option>
-                                                            <option>Casablanca</option>
-                                                            <option>Tokyo</option>
-                                                            <option>Marraekch</option>
-                                                            <option>kyoto , shibua</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <label>Property City :</label>
-                                                        <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
-                                                            <option>New york, CA</option>
-                                                            <option>Paris</option>
-                                                            <option>Casablanca</option>
-                                                            <option>Tokyo</option>
-                                                            <option>Marraekch</option>
-                                                            <option>kyoto , shibua</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <label>Property Statue  :</label>
-                                                        <select id="basic" class="selectpicker show-tick form-control">
-                                                            <option> -Status- </option>
-                                                            <option>Rent </option>
-                                                            <option>Boy</option>
-                                                            <option>used</option>
 
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <label>Property Statue  :</label>
-                                                        <select id="basic" class="selectpicker show-tick form-control">
-                                                            <option> -Status- </option>
-                                                            <option>Rent </option>
-                                                            <option>Boy</option>
-                                                            <option>used</option>
 
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 padding-top-15">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label for="property-geo">Min bed :</label>
-                                                        <input type="text" class="span2" value="" data-slider-min="0"
-                                                               data-slider-max="600" data-slider-step="5"
-                                                               data-slider-value="[250,450]" id="min-bed" ><br />
-                                                        <b class="pull-left color">1</b>
-                                                        <b class="pull-right color">120</b>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-
-                                                    <div class="form-group">
-                                                        <label for="price-range">Min baths :</label>
-                                                        <input type="text" class="span2" value="" data-slider-min="0"
-                                                               data-slider-max="600" data-slider-step="5"
-                                                               data-slider-value="[250,450]" id="min-baths" ><br />
-                                                        <b class="pull-left color">1</b>
-                                                        <b class="pull-right color">120</b>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-
-                                                    <div class="form-group">
-                                                        <label for="property-geo">Property geo (m2) :</label>
-                                                        <input type="text" class="span2" value="" data-slider-min="0"
-                                                               data-slider-max="600" data-slider-step="5"
-                                                               data-slider-value="[50,450]" id="property-geo" ><br />
-                                                        <b class="pull-left color">40m</b>
-                                                        <b class="pull-right color">12000m</b>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 padding-top-15">
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Swimming Pool
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> 2 Stories
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Emergency Exit
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Fire Place
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 padding-bottom-15">
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Laundry Room
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Jog Path
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Ceilings
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> Dual Sinks
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
                                         </div>
                                     </div>
                                     <!-- End step 2 -->
 
                                     <div class="tab-pane" id="step3">
-                                        <h4 class="info-text">Give us somme images and videos ? </h4>
-                                        <div class="row">
-                                            <div class="col-sm-6">
+                                        <h4 class="info-text">Subject Property Information </h4>
+                                         <div class="row p-b-15  ">
+
+                                             <div class="col-sm-6  col-sm-offset-3 ">
                                                 <div class="form-group">
-                                                    <label for="property-images">Chose Images :</label>
+                                                    <label for="property-images">Purchase and Sales Agreement :  <small>(required)</small></label>
                                                     <input class="form-control" type="file" id="property-images">
-                                                    <p class="help-block">Select multipel images for your property .</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="property-video">Property video :</label>
-                                                    <input class="form-control" value="" placeholder="http://www.youtube.com, http://vimeo.com" name="property_video" type="text">
+                                                    <p class="help-block">to upload their purchase/sales documents .</p>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <input class="form-control" value="" placeholder="http://www.youtube.com, http://vimeo.com" name="property_video" type="text">
+                                                 <div class="form-group">
+                                                    <label for="property-images">Earnest Money Deposit :  <small>(required)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">need to upload a copy of earnest money deposit .</p>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <input class="form-control" value="" placeholder="http://www.youtube.com, http://vimeo.com" name="property_video" type="text">
+                                                  <div class="form-group">
+                                                    <label for="property-images">Market Analysis :  <small>(optional)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block">they can upload market analysis and comps from realtors .</p>
                                                 </div>
+
+                                                 <div class="form-group">
+                                                    <label for="property-images"> Contractors Bid/Scope of Work and License and Insurance  :  <small>(if applicable)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block"> upload the General Contractors scope of work/bid and license and insurance documents.</p>
+                                                </div>
+
+                                                  <div class="form-group">
+                                                    <label for="property-images"> Rent Rolls  :  <small>(if applicable)</small></label>
+                                                    <input class="form-control" type="file" id="property-images">
+                                                    <p class="help-block"> need to upload rent roll excel spreadsheet with bank deposits .</p>
+                                                </div>
+
+
+
                                             </div>
+
+
+
                                         </div>
                                     </div>
                                     <!--  End step 3 -->
@@ -304,8 +205,8 @@
                                                 <div class="">
                                                     <p>
                                                         <label><strong>Terms and Conditions</strong></label>
-                                                        By accessing or using  GARO ESTATE services, such as
-                                                        posting your property advertisement with your personal
+                                                        By accessing or using  PRIVATE LOAN WAREHOUSE services, such as
+                                                        posting your property documents with your personal
                                                         information on our website you agree to the
                                                         collection, use and disclosure of your personal information
                                                         in the legal proper manner
