@@ -29,3 +29,9 @@ def borrower_register(request):
     return render(request, 'borrower_register.html' )
 
 
+
+def contact(request):
+    return render(request, 'contact.html' )
+
+
+

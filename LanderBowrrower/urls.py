@@ -1,5 +1,5 @@
 from django.conf.urls import include, url
-from .views import index,home,single,SubmitRequest,profile,login,register,borrower_register
+from .views import index,home,single,SubmitRequest,profile,login,register,borrower_register,contact
 
 urlpatterns = [
     url(r'borrower_register/', borrower_register, name='borrower_register'),
@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'profile/', profile, name='profile'),
     url(r'single/', single, name='single'),
     url(r'request/', SubmitRequest, name='submitrequest'),
+    url(r'contact/', contact, name='contact'),
     url(r'^$', index, name='index'),
 
 
