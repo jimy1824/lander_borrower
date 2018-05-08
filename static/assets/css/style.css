@@ -513,7 +513,7 @@ label.error{
 }
 
 label small{
-    color: #999999;
+    color: white;
 }
 
 .label.label-fill{
@@ -1107,7 +1107,9 @@ page-header
     letter-spacing: 2px;
 }
 .content-area{
-    background-color: #CCCCCC; padding-bottom: 55px;
+    background-color: #CCCCCC; 
+    padding-bottom: 55px;
+    color: #000;
 }
 .layout-switcher a{
     font-size: 25px;
@@ -2226,6 +2228,7 @@ Welcom
 .Welcome-area{
     background: #F3F3F3 url("../../assets/img/welcome-bg.png") no-repeat scroll left top;
     position: relative;
+    background-color: #5e5e5e;
 
 
 }
@@ -2305,7 +2308,7 @@ count-area
 ===================================================*/
 .count-area {
     position: relative; 
-    background-color: #FCFCFC; 
+    background-color: #ccc;
 }
 .count-area .count-item {
     text-align: center;
@@ -2566,6 +2569,7 @@ padding-bottom: 15px;
 /*Home page style 2 Edite */
 .home-lager-shearch .large-search {
     padding: 25px 25px 10px;
+    background-color: grey;
 }
 
 .home-lager-shearch .large-search .btn-lg-sheach {
@@ -2641,8 +2645,9 @@ padding-bottom: 15px;
 
 .profiel-container{
     padding: 10px 0px;
-    border: 1px solid #EEE;
+    border: 1px solid #FDC600;
     transition: all 0.2s ease 0s;
+    background-color: grey;
 }
 .profiel-container .profiel-header h3 {
     font-weight: 200;
@@ -2667,10 +2672,10 @@ padding-bottom: 15px;
     -webkit-transition: all 0.2s;
 }
 .profiel-container .picture:hover{
-    border-color: #2ca8ff;
+    border-color: #FDC600;
 }
 .profiel-container .ct-wizard-azzure .picture:hover{
-    border-color: #2CA8FF;
+    border-color: #FDC600;
 }
 .profiel-container  .picture input[type="file"] {
     cursor: pointer;
