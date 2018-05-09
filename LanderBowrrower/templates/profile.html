@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3 padding-top-25">
+                                <div class="col-sm-3 padding-top-25 col-md-offset-1 ">
 
                                     <div class="form-group">
                                         <label>First Name <small>(required)</small></label>
@@ -78,43 +78,9 @@
 
                             </div>
 
-                            <div class="clear">
-                                <br>
-                                <hr>
-                                <br>
-                                <div class="col-sm-5 col-sm-offset-1">
-                                    <div class="form-group">
-                                        <label>Facebook :</label>
-                                        <input name="Facebook" type="text" class="form-control" placeholder="https://facebook.com/user">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Twitter :</label>
-                                        <input name="Twitter" type="text" class="form-control" placeholder="https://Twitter.com/@user">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Website :</label>
-                                        <input name="website" type="text" class="form-control" placeholder="https://yoursite.com/">
-                                    </div>
-                                </div>
 
-                                <div class="col-sm-5">
-                                    <div class="form-group">
-                                        <label>Public email :</label>
-                                        <input name="p-email" type="email" class="form-control" placeholder="p-email@rmail.com">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Phone :</label>
-                                        <input name="Phone" type="text" class="form-control" placeholder="+1 9090909090">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>FAX :</label>
-                                        <input name="FAX" type="text" class="form-control" placeholder="+1 9090909090">
-                                    </div>
-                                </div>
 
-                            </div>
-
-                            <div class="col-sm-5 col-sm-offset-1">
+                            <div class="col-sm-8 col-sm-offset-10">
                                 <br>
                                 <input type='button' class='btn btn-finish btn-primary' name='finish' value='Finish' />
                             </div>
@@ -123,6 +89,156 @@
 
                 </div>
             </div><!-- end row -->
+
+                <!---start-  request lobiessss--->
+
+                 <div class="row">
+
+                    <div class="col-sm-10 col-sm-offset-1 profiel-container  ">
+
+
+                         <div class="profiel-header">
+                                <h3>
+                                    <b>REQUESTED LOAN REQUESTS <br>
+                                    <small>This information will let us know more about your loan requests.</small>
+                                </h3>
+                                <hr>
+                            </div>
+
+
+                        <div class="col-md-12 ">
+                            <div class="col-xs-10 page-subheader sorting pl0">
+
+
+
+
+                            </div>
+
+                            <div class="col-xs-2 layout-switcher">
+                                <a class="layout-list" href="javascript:void(0);"> <i class="fa fa-th-list"></i>  </a>
+                                <a class="layout-grid active" href="javascript:void(0);"> <i class="fa fa-th"></i> </a>
+                            </div><!--/ .layout-switcher-->
+                        </div>
+
+                        <div class="col-md-12 ">
+                            <div id="list-type" class="proerty-th">
+                                <div class="col-sm-6 col-md-3 p0">
+                                    <div class="box-two proerty-item">
+                                        <div class="item-thumb">
+                                            <a href="{% url 'single' %}" ><img src="{% static 'assets/img/demo/property-3.jpg'%}"></a>
+                                        </div>
+
+                                        <div class="item-entry overflow">
+                                            <h5><a href="{% url 'single' %}"> Super nice villa </a></h5>
+                                            <div class="dot-hr"></div>
+                                            <span class="pull-left"><b> Area :</b> 120m </span>
+                                            <span class="proerty-price pull-right"> $ 300,000</span>
+                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
+                                            <div class="property-icon">
+                                                <img src="{% static 'assets/img/icon/bed.png'%}">(5)|
+                                                <img src="{% static 'assets/img/icon/shawer.png'%}">(2)|
+                                                <img src="{% static 'assets/img/icon/cars.png'%}">(1)
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 p0">
+                                    <div class="box-two proerty-item">
+                                        <div class="item-thumb">
+                                            <a href="{% url 'single' %}" ><img src="{% static 'assets/img/demo/property-2.jpg'%}"></a>
+                                        </div>
+
+                                        <div class="item-entry overflow">
+                                            <h5><a href="{% url 'single' %}"> Super nice villa </a></h5>
+                                            <div class="dot-hr"></div>
+                                            <span class="pull-left"><b> Area :</b> 12000m </span>
+                                            <span class="proerty-price pull-right"> $ 300,000</span>
+                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
+                                            <div class="property-icon">
+                                                <a class="align-right" href="{% url 'single' %}"> <i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"  >      </i> </a>
+                                                <a   href="{% url 'single' %}"> <i class="fa  fa-2x fa-trash-o   " aria-hidden="true">      </i> </a>
+                                                <a  class="col--pull-0"  href="{% url 'single' %}"> <i class="fa fa-2x fa-folder-o" aria-hidden="true">     </i> </a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 p0">
+                                    <div class="box-two proerty-item">
+                                        <div class="item-thumb">
+                                            <a href="{% url 'single' %}" ><img src="{% static 'assets/img/demo/property-1.jpg'%}"></a>
+                                        </div>
+
+                                        <div class="item-entry overflow">
+                                            <h5><a href="{% url 'single' %}"> Super nice villa </a></h5>
+                                            <div class="dot-hr"></div>
+                                            <span class="pull-left"><b> Area :</b> 120m </span>
+                                            <span class="proerty-price pull-right"> $ 300,000</span>
+                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
+                                            <div class="property-icon">
+                                                <img src="{% static 'assets/img/icon/bed.png'%}">(5)|
+                                                <img src="{% static 'assets/img/icon/shawer.png'%}">(2)|
+                                                <img src="{% static 'assets/img/icon/cars.png'%}">(1)
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 p0">
+                                    <div class="box-two proerty-item">
+                                        <div class="item-thumb">
+                                            <a href="{% url 'single' %}" ><img src="{% static 'assets/img/demo/property-3.jpg'%}"></a>
+                                        </div>
+
+                                        <div class="item-entry overflow">
+                                            <h5><a href="{% url 'single' %}"> Super nice villa </a></h5>
+                                            <div class="dot-hr"></div>
+                                            <span class="pull-left"><b> Area :</b> 120m </span>
+                                            <span class="proerty-price pull-right"> $ 300,000</span>
+                                            <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
+                                            <div class="property-icon">
+                                                <img src="{% static 'assets/img/icon/bed.png'%}">(5)|
+                                                <img src="{% static 'assets/img/icon/shawer.png'%}">(2)|
+                                                <img src="{% static 'assets/img/icon/cars.png'%}">(1)
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pull-right">
+                                <div class="pagination">
+                                    <ul>
+                                        <li><a href="#">Prev</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---start-  request lobiessss--->
+
+
 
         </div>
     </div>
