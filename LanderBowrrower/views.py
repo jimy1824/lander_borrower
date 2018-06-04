@@ -181,7 +181,55 @@ def editProfile(request):
             return render(request, 'profile.html', {'bowwer_obj': bowwer_obj})
     if request.user.is_lender:
         print('edit lander profile')
-        return render(request, 'lander_edit_profile.html')
+        if request.method=="GET":
+            print('edit barrower profile')
+            lander = Lender.objects.filter(user__username=request.user.username).first()
+            return render(request, 'lander_edit_profile.html',{'lander':lander})
+        if request.method == "POST":
+            print('POST MEYHOD')
+            lender = Lender.objects.filter(user__username=request.user.username).first()
+            user=User.objects.filter(username=request.user.username).first()
+            firstname= request.POST.get('firstname')
+            lastname= request.POST.get('lastname')
+            entityname= request.POST.get('entityname')
+            loanrange= request.POST.get('loanrange')
+            minloansize= request.POST.get('minloansize')
+            maxltv= request.POST.get('maxltv')
+            propertytype= request.POST.get('propertytype')
+            email= request.POST.get('email')
+            adress= request.POST.get('adress')
+            availablefund= request.POST.get('availablefund')
+            minimumcradit= request.POST.get('minimumcradit')
+            maxloansize= request.POST.get('maxloansize')
+            maxltc= request.POST.get('maxltc')
+            state= request.POST.get('state')
+            foreclousure= request.POST.get('foreclousure')
+            if foreclousure==None:
+                foreclousure=False
+            else:
+                foreclousure = True
+
+            user.first_name=firstname
+            user.last_name= lastname
+            user.email = email
+            user.address = adress
+            user.save()
+            lender.entity_name= entityname
+            lender.loan_range=loanrange
+            lender.max_loan_size=maxloansize
+            lender.min_loan_size=minloansize
+            lender.max_ltv=maxltv
+            lender.max_ltc=maxltc
+            lender.property_type=propertytype
+            lender.available_funds=availablefund
+            lender.min_credit=minimumcradit
+            lender.states=state
+            lender.foreclosure=foreclousure
+            lender.save()
+            lender_obj = Lender.objects.filter(user__username=request.user.username).first()
+            return render(request, 'lander_profile.html', {'lander': lender_obj})
+
+
 
 @login_required(login_url='login')
 def editPassword(request):
