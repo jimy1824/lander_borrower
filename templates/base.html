@@ -7,6 +7,7 @@
 
 <html class="no-js"> <!--<![endif]-->
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lander Borrower </title>
@@ -93,18 +94,25 @@
 {#                <button class="navbar-btn nav-button wow bounceInRight login" onclick="location.href='{% url 'login' %}'" data-wow-delay="0.4s">Login</button> #}
            {#     <button class="navbar-btn nav-button wow fadeInRight" onclick="location.href='{% url 'register' %}'" data-wow-delay="0.5s">Register</button>#}
                 <!-- Single button -->
+
+             {% if not user.is_authenticated %}
                 <div class="btn-group">
                     <button type="button" class="navbar-btn nav-button wow bounceInRight login   btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Register <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'borrower_register' %}">Borrower Register</a></li>
-                        <li><a href="{% url 'register' %}">Lander Register</a></li>
+                        <li><a href="{% url 'lander_register' %}">Lander Register</a></li>
                     </ul>
                 </div>
-
+            {% endif %}
+                 {% if not user.is_authenticated %}
                 <button type="button" class="navbar-btn nav-button wow bounceInRight login   btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"   onclick="location.href='{% url 'login' %}'"  > Login </button>
-
+                 {% endif %}
+                 {% if user.is_authenticated %}
+                      <button type="button" class="navbar-btn nav-button wow bounceInRight login   btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"   onclick="location.href='{% url 'logout' %}'"  > Logout </button>
+                     <button type="button" class="navbar-btn nav-button wow bounceInRight login   btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"    > Welcome {{ user.username }} </button>
+                 {% endif %}
             </div>
             <ul class="main-nav nav navbar-nav navbar-right">
 
@@ -113,7 +121,9 @@
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="{% url 'index' %}">Home</a></li>
 
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="{% url 'home' %}">Lobby</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="{% url 'submitrequest' %}">Loan Request</a></li>
+                {% if  request.user.is_borrower %}
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="{% url 'submitrequest' %}">loan request</a></li>
+                {% endif %}
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="{% url 'profile' %}">Profile</a></li>
 
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="{% url 'contact' %}">Contact</a></li>
@@ -251,6 +261,7 @@
 
 <script src="{% static 'assets/js/gmaps.js'%}"></script>
 <script src="{% static 'assets/js/gmaps.init.js'%}"></script>
-
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>#}
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>#}
 </body>
 </html>

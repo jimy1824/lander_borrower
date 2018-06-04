@@ -21,6 +21,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'', include('LanderBowrrower.urls')),
+     # url(r'', include('LanderBowrrower.urls')),
+     # path('account',include('accounts.urls')),
+     path('',include('LanderBowrrower.urls')),
 
 ]+ static(settings.STATIC_URL)

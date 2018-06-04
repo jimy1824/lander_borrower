@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'LanderBowrrower.apps.LanderbowrrowerConfig',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,8 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+AUTH_USER_MODEL = 'accounts.User'
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL='login'
+
